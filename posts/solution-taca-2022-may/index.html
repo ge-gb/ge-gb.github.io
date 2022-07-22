@@ -1,0 +1,102 @@
+<!doctype html><html lang=zh dir=ltr><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>题解: 中学生标准学术能力测试 2022 年 5 月学科能力综合测试 (TACA) 数学二 | Ge G.B.</title><meta name=generator content="Hugo Eureka 0.9.3"><link rel=stylesheet href=/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css><script defer src=/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" as=style onload='this.onload=null,this.rel="stylesheet"'><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css media=print onload='this.media="all",this.onload=null' crossorigin><script defer src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js crossorigin></script>
+<script defer src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js crossorigin></script>
+<link rel=stylesheet href=/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css media=print onload='this.media="all",this.onload=null'><script defer type=text/javascript src=/js/fontawesome.min.c727b104d15fa97f142f5f39c00a6efb349e269fd6f830b1b3bed2bc491625a538381493786fd7d8c41283497321be94.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css integrity=sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ media=print onload='this.media="all",this.onload=null' crossorigin><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js integrity=sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY crossorigin></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script><script defer src=https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js integrity=sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0 crossorigin></script>
+<link rel=icon type=image/png sizes=32x32 href=/images/icon_hu80066554bd8cbd2172f3e5b3b1b95797_76254_32x32_fill_box_center_3.png><link rel=apple-touch-icon sizes=180x180 href=/images/icon_hu80066554bd8cbd2172f3e5b3b1b95797_76254_180x180_fill_box_center_3.png><meta name=description content="有同学参加了本次 TACA, 于是写一篇题解. 题目涉及数学分析, 线性代数和抽象代数的入门知识, 还有一些略微困难的普通高中数学题目. 这篇题解中我会尽可能写明使用的定"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"随笔","item":"/posts/"},{"@type":"ListItem","position":2,"name":"题解: 中学生标准学术能力测试 2022 年 5 月学科能力综合测试 (TACA) 数学二","item":"/posts/solution-taca-2022-may/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/solution-taca-2022-may/"},"headline":"题解: 中学生标准学术能力测试 2022 年 5 月学科能力综合测试 (TACA) 数学二 | Ge G.B.","datePublished":"2022-06-03T09:42:32+08:00","dateModified":"2022-06-03T09:42:32+08:00","wordCount":2215,"publisher":{"@type":"Person","name":"WANG Chucheng","logo":{"@type":"ImageObject","url":"/images/icon.png"}},"description":"有同学参加了本次 TACA, 于是写一篇题解. 题目涉及数学分析, 线性代数和抽象代数的入门知识, 还有一些略微困难的普通高中数学题目. 这篇题解中我会尽可能写明使用的定"}</script><meta property="og:title" content="题解: 中学生标准学术能力测试 2022 年 5 月学科能力综合测试 (TACA) 数学二 | Ge G.B."><meta property="og:type" content="article"><meta property="og:image" content="/images/icon.png"><meta property="og:url" content="/posts/solution-taca-2022-may/"><meta property="og:description" content="有同学参加了本次 TACA, 于是写一篇题解. 题目涉及数学分析, 线性代数和抽象代数的入门知识, 还有一些略微困难的普通高中数学题目. 这篇题解中我会尽可能写明使用的定"><meta property="og:locale" content="zh"><meta property="og:site_name" content="Ge G.B."><meta property="article:published_time" content="2022-06-03T09:42:32+08:00"><meta property="article:modified_time" content="2022-06-03T09:42:32+08:00"><meta property="article:section" content="posts"><body class="flex min-h-screen flex-col"><header class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"><div class="mx-auto w-full max-w-screen-xl"><script>let storageColorScheme=localStorage.getItem("lightDarkMode");((storageColorScheme=="Auto"||storageColorScheme==null)&&window.matchMedia("(prefers-color-scheme: dark)").matches||storageColorScheme=="Dark")&&document.getElementsByTagName("html")[0].classList.add("dark")</script><nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0"><a href=/ class="me-6 text-primary-text text-xl font-bold">Ge G.B.</a>
+<button id=navbar-btn class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+<i class="fas fa-bars"></i></button><div id=target class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20"><div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0"><a href=/posts/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 selected-menu-item me-4">随笔</a>
+<a href=/docs/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">文档</a></div><div class=flex><div class="relative pt-4 md:pt-0"><div class="cursor-pointer hover:text-eureka" id=lightDarkMode><i class="fas fa-adjust"></i></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id=is-open></div><div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40" id=lightDarkOptions><span class="px-4 py-1 hover:text-eureka" name=Light>浅色</span>
+<span class="px-4 py-1 hover:text-eureka" name=Dark>深色</span>
+<span class="px-4 py-1 hover:text-eureka" name=Auto>自动</span></div></div></div></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id=is-open-mobile></div></nav><script>let element=document.getElementById("lightDarkMode");storageColorScheme==null||storageColorScheme=="Auto"?document.addEventListener("DOMContentLoaded",()=>{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",switchDarkMode)}):storageColorScheme=="Light"?(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","sun"),element.firstElementChild.classList.add("fa-sun")):storageColorScheme=="Dark"&&(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","moon"),element.firstElementChild.classList.add("fa-moon")),document.addEventListener("DOMContentLoaded",()=>{getcolorscheme(),switchBurger()})</script></div></header><main class="grow pt-16"><div class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8"><div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12"><div class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"><article class=prose><h1 class=mb-4>题解: 中学生标准学术能力测试 2022 年 5 月学科能力综合测试 (TACA) 数学二</h1><div class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"><div class="me-6 my-2"><i class="fas fa-calendar me-1"></i>
+<span>2022-06-03</span></div><div class="me-6 my-2"><i class="fas fa-clock me-1"></i>
+<span>5分钟阅读时长</span></div></div><p>有同学参加了本次 TACA, 于是写一篇题解. 题目涉及数学分析, 线性代数和抽象代数的入门知识, 还有一些略微困难的普通高中数学题目.</p><p>这篇题解中我会尽可能写明使用的定理和基本方法, 便于不了解本科数学入门课程的同学根据关键词查找相关资料. 另外在文末附有参考书籍, 均来自网络.</p><h2 id=试题和解答>试题和解答</h2><p>网络上的回忆版试题如下. 原试卷给出了一些常数的近似值, 每道题的答案都是<strong>自然数 (正整数和0)</strong>.</p><p><strong>题 1.</strong> 设 $a, b, c$ 为方程 $x^3 - 3x^2 -2x + 1=0$ 的三个实根, 则 $[a^{-4}+b^{-4}+c^{-4}]= ?$</p><p><strong>解析.</strong> 根据对称多项式基本定理 (想证明可以看文末的参考书), 我们知道此类对称多项式一定可以表示为初等对称多项式的代数组合. 因此我们可以放心地着手使用二项式定理凑出该式的初等多项式表示.</p><p>定义 $A \coloneqq 1/a, B \coloneqq 1/b, C \coloneqq 1/c$, 那么 $A, B, C$ 是方程 $1-3x-2x^2+x^3=0$ 的三个实根. 根据根与系数的关系知</p><div>$$
+\begin{aligned}
+X &\coloneqq A+B+C=2, \\ 
+Y &\coloneqq AB+BA+CA=-3, \\
+Z &\coloneqq ABC=-1.
+\end{aligned}
+$$</div><p>并且</p><div>$$
+\begin{aligned}
+&A^4+B^4+C^4 \\
+=&[(A+B+C)^2-2(AB+BC+CA)]^2 \\
+&-2(AB+BC+CA)^2 \\
+&+4ABC(A+B+C),
+\end{aligned}
+$$</div>代入得答案 74.<p><strong>题 2.</strong> 设正实数 $a, b$ 满足 $a + 2b = 1$, $\dfrac{b^2+a+2}{ab}$ 的最小值为 $I$, $[I]=?$</p><p><strong>解析.</strong> $1-2b=a>0$, 则 $b \in (0, 1/2)$. 定义
+$$y \coloneqq \dfrac{b^2+a+2}{ab}=\dfrac{b^2-2b+3}{-2b^2+b},$$
+变形得存在 $b \in (0, 1/2)$ 满足:</p><div>$$
+\begin{aligned}
+0&=(2y+1)b^2-(y+2)b+3 \\
+&\eqqcolon f(b),
+\end{aligned}
+$$</div>但是 $f(0)=3>0, f(1/2)=2>0$, $f(x)$ 的对称轴 $x = \dfrac{y+2}{4y+1} < 1/2$, 于是
+$$0 \leq \Delta = (y+2)^2 - 4 \cdot 3 \cdot (2y+1),$$
+解得
+$$y \in (-\infty, 10 - 6\sqrt{3}] \cup [10 + 6\sqrt{3}, +\infty).$$
+又 $y > 0$, 则 $I = 10+6\sqrt{3}$, 取整为 20.<p><strong>题 3.</strong> 正方形内给定 2022 个点, 这些点以及正方形的顶点中任三点不共线, 在这 2022 个点以及正方形的顶点之间连一些仅可能在端点处相交的线段, 将正方形划分为若干个三角形, 则所连线段的总数 (不包含原正方形的边) 为?</p><p><strong>解析.</strong> 正方形内有 $n$ 个点, 记 $a_n$ 为所求数值. 显然 $a_1=4$. 如果再添加一个点, 例如 $P$. 根据题目条件, $P$ 一定在某个
+三角形 ABC 内部, 连接 PA, PB 和 PC, 便得到 $a_{n+1}$ 对应的图. 最终有 $a_n = 3n+1$, 则答案为 6067.</p><p><strong>题 4.</strong> 设 $x_0 \in [0, 1/2]$, 且 $x^3-3x+1=0$, 则 $[100x_0]=?$</p><p><strong>解析.</strong> 反正这题目要取整, 倒不如试试. 我先考虑了 1/3, 进一步考虑了 0.33, 0.34, 0.35, 得出答案 34. 下面几个解法将会求出三个精确实根.</p><p>考察函数发现方程存在大于 1 的实根 $x$, 待定系数 $x = u + v$, 原方程化作</p><div>$$
+\begin{aligned}
+0 &=(u+v)^3-3(u+v)+1 \\
+  &=u^3+v^3+3(uv-1)(u+v)+1.
+\end{aligned}
+$$</div>更进一步, 我们设 $x = u + 1/u$, 方程变为 $u^3+u^{-3}+1=0$, 即 $(u^3)^2+u^3+1=0$. 方程 $t^2+t+1=0$ (即 $\dfrac{t^3-1}{t-1}=0$) 的根就是三次单位根 $\omega = -1/2 + i\sqrt{3}/2$, 和 $\omega^2$. 那么原方程的根如下:<div>$$
+\begin{aligned}
+x_1 &= \omega^{1/3} + \omega^{-1/3} = 2\cos(2\pi/9), \\
+x_2 &= \omega^{4/3} + \omega^{-4/3} = 2\cos(8\pi/9), \\
+x_3 &= \omega^{7/3} + \omega^{-7/3} = 2\cos(14\pi/9).
+\end{aligned}
+$$</div><p>另外一种方式是令 $x=k\cos \theta$, 于是</p><div>$$
+\begin{aligned}
+0 &= (k \cos \theta)^3 - 3k\cos \theta + 1 \\
+&= k(k^2 \cos^3 \theta - 3\cos \theta) + 1
+\end{aligned}
+$$</div><p>令 $k$ 取 $2$, 有 $\cos 3\theta = -1/2$. 回代得出与上面相同的三个解.</p><p><strong>题 5.</strong> 设 $f(x) = \dfrac{1-2x}{(1-x+x^2)^2}$, 则 $\displaystyle{\left[\frac{f^{(2022)}(0)}{2022!}\right]=?}$</p><p><strong>解析.</strong> 记 $y \coloneqq \dfrac{1}{1-x+x^2}$, 则 $f(x)=y&rsquo;$, 答案即为$\displaystyle{\left[\frac{y^{(2023)}(0)}{2022 !}\right]}$.</p><p>由 $\left(1-x+x^{2}\right) y=1$, 求 $n(\geq 2)$ 次导数, 根据 Leibniz 公式, 有
+$$\left(1-x+x^{2}\right) y^{(n)}+\binom n 1 (2 x-1) y^{(n-1)}+\binom n 2 2 y^{(n-2)}=0,$$
+令 $x=0$, 记 $y^{(n)}(0)=a_{n}$, 则
+$$a_{n}-n a_{n-1}+n(n-1) a_{n-2}=0,$$
+所以
+$$\frac{a_n}{n!}-\frac{a_{n-1}}{(n-1)!}+\frac{a_{n-2}}{(n-2)!}=0,$$
+由于该递推关系的特征方程没有实根, 数列 $(a_n/n!)$ 是周期数列. 经验证, 该数列最小正周期为 6, 从首项开始, 不断取值为 $1, 1, 0, -1, -1, 0$. 最终答案为 2023.</p><p><strong>题 6.</strong> $\displaystyle{\left[120 \int_0^1 \sqrt{\dfrac{1-x}{1+x}} \mathrm{d}x \right] =?}$</p><p><strong>解析.</strong> 利用换元积分公式, 将 $x$ 替换为 $\cos x$, 利用三角函数公式和定积分的基本性质计算即可, 答案 $[120(\pi/ 2 -1)] = 68$.</p><p><strong>题 7.</strong> $I=\lim_{x \to +\infty}(\sin x^{-2} + \cos x^{-1})^{2x^2}$, $[10 I]=?$</p><p><strong>解析.</strong> 令 $t=1/x$, 则</p><div>$$
+\begin{aligned}
+&\lim _{t \to 0^{+}} \frac{2\left(\sin t^{2}+\cos t-1\right)}{t^{2}} \\
+&=\lim _{t \to 0^{+}} \frac{2\left(t^{2}+o\left(t^{2}\right)-\frac{1}{2}+o\left(t^{2}\right)\right)}{t^{2}} \\
+&=1, \\
+I&=\lim _{t \to 0^{+}}\left(\sin t^{2}+\cos t\right)^{\frac{2}{r^{2}}} \\
+&=\lim _{t \to 0^{+}}\left(1+\sin t^{2}+\cos t-1\right)^{\frac{1}{\sin t^{2}+\cos t-1} \frac{2\left(\sin t^{2}+\cos t-1\right)}{t^{2}}} \\
+&=\mathrm{e}
+\end{aligned}
+$$</div><p>答案为 27.</p><p><strong>题 8.</strong> 设 $(x_1, y_1)=(0, 0), (x_2, y_2)=(1, 8), (x_3, y_3)=(3, 8), (x_4, y_4) = (4, 20), k,b \in \R$, 则当 $\sum_{i=1}^4 |y_i-(kx_i+b)|^2$ 的值最小时, $[k]=?$</p><p><strong>解析.</strong> 写出表达式, 求导. 答案 4.</p><p><strong>题 9.</strong> $\displaystyle{I=\sum_{m=1}^{+\infty}\sum_{n=1}^{+\infty}\frac{1}{n!n!+n!m!}}$, $\displaystyle{\left[10 I\right] = ?}$</p><p><strong>解析.</strong> 一下解答省略求和上下限, 只标注求和指标. $I$ 的每一个单项都是正的, 又有</p><div>$$
+\begin{aligned}
+I &= \sum_m\sum_n\frac{1}{n!n!+n!m!} \\
+&\leq \sum_n \frac{1}{m ! n !} \\
+&= \frac{\mathrm{e}-1}{m !}
+\end{aligned}
+$$</div><p>并且 $\sum_m (\mathrm{e}-1)/m!$ 的每一项都是正的且收敛, 于是该级数绝对收敛, 原级数绝对收敛, 可以交换求和次序.</p><div>$$
+\begin{aligned}
+I&=\sum_m\sum_n\frac{1}{n!n!+n!m!} = \sum_n\sum_m \frac{1}{n!n!+n!m!} \\
+&=\sum_n\sum_m \frac{1}{m ! m !+m ! n !} \\
+2I &= \sum_{n}\sum_{m} (\frac{1}{n!n!+n!m!} + \frac{1}{m ! m !+m ! n !}) \\
+&= \sum_{n}\sum_{m} \frac{1}{m!n!} \\
+&= \sum_n \frac{\mathrm{e}-1}{m!} \\
+&= (\mathrm{e}-1)^2.
+\end{aligned}
+$$</div><p>答案为 14.</p><p><strong>题 10.</strong> 一个 $10 \times 10$ 的数表初始时每个位置数字均为 $1$，现在做有限次操作，每次把某行或某列的所有数换成其相反数. 当且仅当最终数表中 $-1$ 的个数恰为 $N$, 称非负整数 $N$ 是好的. 好的 $N$ 的个数为?</p><p><strong>解析.</strong> 设 $A$ 是 10 阶对角方阵, 元素都是 1, 按题目操作得到以下矩阵:</p><p>$$
+X = (\prod_i d_{\mathrm{l},i})A(\prod_i d_{\mathrm{r}, i}) \eqqcolon PAQ.
+$$</p><p>其中 $d_k$ 都是对角矩阵, $\mathrm{l}$ 和 $\mathrm{r}$ 用来区分左乘和右乘. 由于对角矩阵的乘法可交换, 每个矩阵的数字标号可以看作对角线上 $-1$ 的位置 (对角线上其他元素为 $1$).</p><p>$P$ 和 $Q$ 都是对角矩阵, 主对角线元素为 $1$ 或 $-1$, $-1$ 的个数可以在不超过 $10$ 的自然数中任意取值. 设 $P$ 中有 $a$ 个 $-1$, $Q$ 中有 $b$ 个 $-1$, 则 $X$ 中有 $N = 10a -ab + (10-a)b = 2(25-(a-5)(b-5))$ 个 $-1$. 由此得知好的 $N$ 的取值有 29 种.</p><p><strong>题 11.</strong> $[I]=?$</p><div>$$
+B=\left[\begin{array}{ll}
+2 & -\frac{1}{2} \\
+3 & -\frac{1}{2}
+\end{array}\right], X=\left[\begin{array}{l}
+1 \\
+1
+\end{array}\right], I=\lim _{n \to+\infty} \frac{1}{n} \sum_{i=0}^{n-1} X^{T} B^{i} X
+$$</div><p><strong>解析.</strong> 令 $\det (\lambda e - B) =0$ ($e$ 为单位矩阵), 解得 $\lambda_1 = 1, \lambda_2 = 1/2$, 前者对应特征向量 $\left[\begin{array}{cc}1 \\ 2 \end{array}\right]$, 后者对应特征向量 $\left[\begin{array}{cc}1 \\ 3 \end{array}\right]$. 令 $Y = \left[\begin{array}{cc} 1 & 1 \\ 2 & 3 \end{array}\right]$, 则 $Y^{-1}= \left[\begin{array}{cc} 3 & -1 \\ -2 & 1 \end{array}\right]$,</p><div>$$
+B=Y\left[\begin{array}{cc} 1 & 0 \\ 0 & 1/2 \end{array}\right]Y^{-1}
+$$
+$$
+B^n=Y\left[\begin{array}{cc} 1 & 0 \\ 0 & 1/2^n \end{array}\right]Y^{-1}
+$$</div><p>代入原式计算并利用 Stolz 定理得到 $[I]=[6]=6$.</p><p><strong>题 12.</strong> 元素均在 $\{1/2, -1/2 \}$ 中的正交矩阵的个数为?</p><p><strong>解析.</strong> 利用正交矩阵的任意列向量与自身的数量积为 1, 可以确定满足条件的方阵的阶数为 4. 利用不同列向量数量积为 0, 可以确定不同两列之间相同的元素只能是 2 个. 由以上两个条件分类讨论计数得出有 768 个.</p><p><strong>题 13.</strong> $A$ 为 10 阶方阵, $A^5 = 0$, 则 $A$ 的秩的所有可能值之和为?</p><p><strong>解析.</strong> 由 $\mathrm{rank}(AB) \geq \mathrm{rank}(A) + \mathrm{rank}(B) - n$ (两矩阵为 n 阶方阵), 知 $0 = \mathrm{rank}(A^5) \geq 5\mathrm{rank}(A) - (5-1)10$, 解得 $\mathrm{rank}(A) \leq 8$, 并且对不超过 8 的自然数均可取值, 故有 36 种.</p><p><strong>题 14.</strong></p><span>$A=\left[\begin{array}{cc}3 & 7 \\ 10 & 7\end{array}\right], B=\left[\begin{array}{ll}2 & 3 \\ 4 & 5\end{array}\right]$</span>
+, 设线性映射 $P(X)=A X B$, 则 $P$ 的迹为?<p><strong>解析.</strong> $\mathrm{Tr}(T) = \mathrm{Tr}(A) \mathrm{Tr}(B) = 70.$</p><p><strong>题 15.</strong> 6 阶对称群 $S_6$ 中的 6 阶元素的个数为?</p><p><strong>解析.</strong> 由置换的轮换分解定理, 答案即 $S_6$ 中的 6-轮换和 1,2,3-轮换的个数, 共 240 个.</p><h2 id=了解更多>了解更多</h2><ul><li>清华大学于品教授在清华大学丘成桐数学英才版试用的数学分析讲义 (<a href=https://www.bananaspace.org/wiki/%E8%AE%B2%E4%B9%89:%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90>https://www.bananaspace.org/wiki/讲义:数学分析</a>).</li><li>Sergei Treil. Linear Algebra Done Wrong (<a href=https://www.math.brown.edu/streil/papers/LADW/LADW.html)>https://www.math.brown.edu/streil/papers/LADW/LADW.html)</a>.</li><li>李文威. 代数学方法: 卷一 (<a href=https://wwli.asia/index.php/zh/books-item-zh)>https://wwli.asia/index.php/zh/books-item-zh)</a>.</li></ul><p>本作品由<a xmlns:cc=http://creativecommons.org/ns# href=https://ge-gb.github.io/posts/solution-taca-2022-may/ property="cc:attributionName" rel=cc:attributionurl> Ge G.B. </a>采用<a rel=license href=http://creativecommons.org/licenses/by-sa/4.0/>知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</p></article></div></div><script>document.addEventListener("DOMContentLoaded",()=>{hljs.highlightAll()})</script></div></div></main><footer class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b"><p class="text-sm text-tertiary-text">Powered by the <a href=https://github.com/wangchucheng/hugo-eureka class=hover:text-eureka>Eureka</a> theme for <a href=https://gohugo.io class=hover:text-eureka>Hugo</a></p></div></div></footer></body></html>
